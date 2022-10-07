@@ -16,8 +16,23 @@ export class ProductService {
     this.initProducts();
   }
 
+  getProductById(id: number): Observable<Product> {
+    return this
+              .products$
+              .pipe(
+                map(products => products.find(product => product.id == id))
+              )
+  }
+
   initProducts() {
-    this.products$ = this.http.get<Product[]>(this.baseUrl);
+    this.products$ = this
+                        .http
+                        .get<Product[]>(this.baseUrl)
+                        .pipe(
+                          tap(console.table),
+                          delay(1500), // Délai juste pour la démo!
+                          shareReplay()
+                        );
   }
 
 }
