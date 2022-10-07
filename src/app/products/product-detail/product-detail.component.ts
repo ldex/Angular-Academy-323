@@ -10,7 +10,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductDetailComponent implements OnInit {
 
-  @Input() product: Product;
+  product: Product;
 
   constructor(
     private activatedRoute: ActivatedRoute,
