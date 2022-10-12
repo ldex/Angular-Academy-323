@@ -37,4 +37,4 @@ The app is running on `http://localhost:4200/` and will automatically reload if 
 
 ## Try it live in Stackblitz without installation!
 
-<a href="https://stackblitz.com/github/ldex/Angular-Academy-252" target="_blank">Angular Demo App</a>
+<a href="https://stackblitz.com/github/ldex/Angular-Academy-323" target="_blank">Angular Demo App</a>
